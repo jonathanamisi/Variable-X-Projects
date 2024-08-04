@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive 3D-Slider</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: #D2D2D2D2;
+            background-image:repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ), 
+             repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            ) ;
+        }
+        
+        body::before{
+            position:absolute;
+            width: min(1400, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <div class="banner">
+        <div class="slider"  style="--quantity: 10">
+            <!-- The images we need in the slider -->
+            <div class="item" style="--position: 1"><img src="img/nature1.jpg"></div>
+            <div class="item" style="--position: 2"><img src="img/nature2.jpg"></div>
+            <div class="item" style="--position: 3"><img src="img/nature3.jpg"></div>
+            <div class="item" style="--position: 4"><img src="img/nature4.jpg"></div>
+            <div class="item" style="--position: 5"><img src="img/nature5.jpg"></div>
+            <div class="item" style="--position: 6"><img src="img/nature6.jpg"></div>
+            <div class="item" style="--position: 7"><img src="img/nature7.jpg"></div>
+            <div class="item" style="--position: 8"><img src="img/nature8.jpg"></div>
+            <div class="item" style="--position: 9"><img src="img/nature9.jpg"></div>
+            <div class="item" style="--position: 10"><img src="img/nature10.jpg"></div>
+        </div>
+        <div class="content">
+            <div class="author">
+                <h2>Dev. $X</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                    Subscribe to the chanel to watch more interesting videos
+                </p>
+            </div>
+            <div class="model"></div>     
+        </div>
+
+    </div>
+</body>
+</html>
